@@ -34,9 +34,9 @@ header nav.logo {
 }
 
 header nav.logo img {
-	width: 150px;
-	border-radius: 100%;
-	border: #212529 solid;
+  width: 150px;
+  border-radius: 100%;
+  border: #212529 solid;
 }
 
 header nav.logo h1 {
@@ -83,6 +83,66 @@ header nav.links a {
 
 header nav.links a.active,
 header nav.links a:hover {
-  transition: 350ms;
+  transition: 0.3s ease all;
   color: #212529;
+}
+
+/* Footer */
+footer .social {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .social a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #9b9b9b;
+  color: #f3f3f3;
+  margin: 10px;
+  text-align: center;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+}
+
+footer .social a:hover {
+  background: #212529;
+}
+
+footer .social a i {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+footer .icon-container:hover a {
+  animation: icon 0.5s ease;
+}
+
+@keyframes icon {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+footer .created-by {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+footer .created-by a {
+  text-decoration: none;
+  color: #9b9b9b;
+}
+
+footer .created-by a:hover {
+  text-decoration: underline;
+  color: #212529;
+  transition: 0.3s ease all;
 }
