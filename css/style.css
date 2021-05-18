@@ -87,6 +87,33 @@ header nav.links a:hover {
   color: #212529;
 }
 
+/* Grid */
+.grid {
+  position: relative;
+  width: 100%;
+  /*  */
+  /*  */
+}
+
+.grid .item {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 10px;
+  width: calc(33.333333% - 20px);
+}
+
+.grid .item-content {
+  position: relative;
+}
+
+.grid .item .item-content img {
+  width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+  border-radius: 10px;
+}
+
 /* Footer */
 footer .social {
   display: flex;
