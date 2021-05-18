@@ -11,13 +11,78 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #212529;
   background-color: #f3f3f3;
 }
 
 main {
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  padding: 40px 0;
+}
+
+header nav.logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header nav.logo img {
+	width: 150px;
+	border-radius: 100%;
+	border: #212529 solid;
+}
+
+header nav.logo h1 {
+  font-size: 3.2rem;
+}
+
+header nav.logo p {
+  font-size: 2.4rem;
+  color: #9b9b9b;
+}
+
+header nav.form form label {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+header nav.form form label .search-bar {
+  width: 70%;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  padding: 0 20px;
+  border-radius: 100px;
+  border: none;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+header nav.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header nav.links a {
+  text-decoration: none;
+  color: #9b9b9b;
+  margin: 10px 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+header nav.links a.active,
+header nav.links a:hover {
+  transition: 350ms;
+  color: #212529;
 }
