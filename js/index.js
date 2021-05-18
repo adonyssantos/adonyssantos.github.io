@@ -3,3 +3,8 @@ const grid = new Muuri(".grid", {
     rounding: true,
   },
 });
+
+window.addEventListener("load", () => {
+  grid.refreshItems().layout();
+  document.getElementById("grid").classList.add("loaded");
+});
