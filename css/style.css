@@ -118,6 +118,75 @@ header nav.category a:hover {
   border-radius: 10px;
 }
 
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #22262ae6;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+.overlay .img-container {
+  position: relative;
+}
+
+.overlay img {
+  margin-top: 0;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.overlay .project-info {
+  display: block;
+  max-width: 50%;
+  margin-top: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f3f3f3;
+  color: #9b9b9b;
+}
+
+.overlay .project-info h3 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.overlay .project-info p {
+  font-size: 1.6rem;
+}
+
+.overlay .project-info p a {
+  text-decoration: none;
+  color: #9b9b9b;
+}
+
+.overlay .project-info p a:hover {
+  text-decoration: underline;
+  transition: 0.3s ease all;
+  color: #212529;
+}
+
+.overlay .close-btn-popup {
+  position: absolute;
+	top: -20px;
+	right: -20px;
+  font-size: 20px;
+	border: none;
+	cursor: pointer;
+	background: none;
+	color: #f3f3f3;
+}
+
 /* Footer */
 footer .social {
   display: flex;
