@@ -52,4 +52,9 @@ window.addEventListener("load", () => {
   document
     .querySelector("#close-btn-popup")
     .addEventListener("click", () => overlay.classList.remove("active"));
+
+  // Add overlay listener
+  overlay.addEventListener("click", (event) =>
+    event.target.id === "overlay" ? overlay.classList.remove("active") : ""
+  );
 });
