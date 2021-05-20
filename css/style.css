@@ -138,11 +138,14 @@ header nav.category a:hover {
 
 .overlay .img-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 .overlay img {
   margin-top: 0;
-  max-width: 100%;
+  max-width: 70%;
   border-radius: 10px;
 }
 
