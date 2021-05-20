@@ -67,13 +67,13 @@ header nav.form form label .search-bar {
   font-size: 1.6rem;
 }
 
-header nav.links {
+header nav.category {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-header nav.links a {
+header nav.category a {
   text-decoration: none;
   color: #9b9b9b;
   margin: 10px 20px;
@@ -81,8 +81,8 @@ header nav.links a {
   font-weight: 700;
 }
 
-header nav.links a.active,
-header nav.links a:hover {
+header nav.category a.active,
+header nav.category a:hover {
   transition: 0.3s ease all;
   color: #212529;
 }
