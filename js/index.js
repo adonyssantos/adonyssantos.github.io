@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
       event.target.classList.add("active");
       category === "all"
         ? grid.filter(`[data-category]`)
-        : grid.filter(`[data-category="${category}]"`);
+        : grid.filter(`[data-category="${category}"]`);
     });
   });
 
