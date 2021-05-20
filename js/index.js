@@ -22,4 +22,10 @@ window.addEventListener("load", () => {
         : grid.filter(`[data-category="${category}]"`);
     });
   });
+
+  // Add the listener for the search bar
+  document.querySelector("#search-bar").addEventListener("input", (event) => {
+    const search = event.target.value;
+    grid.filter((item) => item.getElement().dataset.tags.includes(search));
+  });
 });
