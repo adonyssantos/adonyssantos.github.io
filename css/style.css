@@ -246,3 +246,18 @@ footer .created-by a:hover {
   color: #212529;
   transition: 0.3s ease all;
 }
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #fff; 
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #9b9b9b; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #212529; 
+}
