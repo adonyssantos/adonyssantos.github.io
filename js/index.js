@@ -57,4 +57,9 @@ window.addEventListener("load", () => {
   overlay.addEventListener("click", (event) =>
     event.target.id === "overlay" ? overlay.classList.remove("active") : ""
   );
+
+  // Add listener for the close to press Escape
+  addEventListener("keydown", (event) =>
+    event.key === "Escape" ? overlay.classList.remove("active") : ""
+  );
 });
