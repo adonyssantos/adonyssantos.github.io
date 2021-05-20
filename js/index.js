@@ -45,7 +45,11 @@ window.addEventListener("load", () => {
       document.querySelector("#overlay .description").innerHTML = description;
       document.querySelector("#overlay a").href = project_repository;
       document.querySelector("#overlay a").innerHTML = project_repository;
-      
     });
   });
+
+  // Add close button listener
+  document
+    .querySelector("#close-btn-popup")
+    .addEventListener("click", () => overlay.classList.remove("active"));
 });
