@@ -1,120 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Adonys Santos | Portfolio</title>
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="shortcut svg" href="./assets/img/favicon.svg" type="image/svg">
-</head>
-<body>
-	<main>
-		<header>
-			<nav class="logo">
-				<img src="./assets/img/me.png" alt="Adonys Santos">
-				<h1>Adonys Santos</h1>
-				<p>Junior Front-End Developer</p>
-			</nav>
-			<nav class="form">
-				<form action="">
-					<label for="search-bar">
-						<input type="text" name="search-bar" id="search-bar" class="search-bar" placeholder="Search">
-					</label>
-				</form>
-			</nav>
-			<nav class="category" id="category">
-				<a href="#" class="active">All</a>
-				<a href="#">HTML, CSS and JavaScript</a>
-				<a href="#">React.js</a>
-				<a href="#">Discord.js</a>
-			</nav>
-		</header>
-		<!-- <section id="project">
-			<ul>
-				<li>
-					<strong>✅ ToDo List with React.js:</strong>
-					<a
-						href="https://github.com/adonyssantos/todo-list-react-app">https://github.com/adonyssantos/todo-list-react-app</a>
-				</li>
-				<li>
-					<strong>💬 Realtime Chat with React.js and Firebase:</strong>
-					<a href="https://github.com/adonyssantos/react-chat">https://github.com/adonyssantos/react-chat</a>
-				</li>
-				<li>
-					<strong>🤖 Discord.js Started Guide:</strong>
-					<a
-						href="https://github.com/adonyssantos/discordjs-starter-guide">https://github.com/adonyssantos/discordjs-starter-guide</a>
-				</li>
-				<li>
-					<strong>📈 Students Ranking with React.js and Firebase:</strong>
-					<a
-						href="https://github.com/adonyssantos/rankings-cemas">https://github.com/adonyssantos/rankings-cemas</a>
-				</li>
-				<li>
-					<strong>🔒 Password Generator:</strong>
-					<a
-						href="https://github.com/adonyssantos/password-generator">https://github.com/adonyssantos/password-generator</a>
-				</li>
-
-				<li>
-					<strong>🎨 Open source CSS Library:</strong>
-					<a
-						href="https://github.com/adonyssantos/palm-treee-css">https://github.com/adonyssantos/palm-treee-css</a>
-				</li>
-			</ul>
-		</section> -->
-		<section class="grid" id="grid">
-			<article 
-				class="item" 
-				data-category="react.js" 
-				data-tags="ranking cemas school education student list index sort json bootstrap firebase api" 
-				data-title="Ranking Cemas" 
-				data-description="In our school they averaged the students manually. I collaborated with my classmates to develop app to calculate the average of each student and sort the list of students according to their grade and average. The data is obtained from a JSON from a CEMAS API. We use agile methodologies (SCRUM and Kanban). The technologies we use were: Git, GitHub, Trello, React, Bootstrap and Firebase." 
-				data-project_repository="https://github.com/adonyssantos/rankings-cemas"
-			>
-				<div class="item-content">
-					<img src="./assets/img/portfolio/ranking-cemas.jpeg" alt="">
-				</div>
-			</article>
-		</section>
-		<section class="overlay" id="overlay">
-			<div class="img-container">
-				<button class="close-btn-popup" id="close-btn-popup"><i class="fas fa-times"></i></button>
-				<img src="" alt="">
-			</div>
-			<div class="project-info">
-				<h3 class="title"></h3>
-				<p class="description"></p>
-				<p><strong>Project Repository:</strong> <a href="#" target="_blank" rel="noopener noreferrer"></a></p>
-			</div>
-		</section>
-		<footer>
-			<div class="social">
-				<div class="icon-container">
-					<a href="https://twitter.com/adonyssantos_" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-twitter"></i>
-					</a>
-				</div>
-				<div class="icon-container">
-					<a href="https://github.com/adonyssantos" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-github"></i>
-					</a>
-				</div>
-				<div class="icon-container">
-					<a href="https://www.linkedin.com/in/adonyssantos" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-				</div>
-			</div>
-			<div class="created-by">
-				<p>Developed by <a href="https://www.linkedin.com/in/adonyssantos" target="_blank" rel="noopener noreferrer">Adonys Santos</a></p>
-			</div>
-		</footer>
-	</main>
-	<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.4/dist/muuri.min.js"></script>
-	<script src="./js/index.js"></script>
-	<script src="https://kit.fontawesome.com/acd22c9961.js" crossorigin="anonymous"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adonys Santos</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="content">
+      <nav class="logo">
+        <img src="./assets/images/me.png" alt="Adonys Santos" />
+        <h1>Adonys Santos</h1>
+        <p>Junior Frontend Developer</p>
+      </nav>
+    </header>
+    <main class="content">
+      <ul>
+        <li>
+          <a
+            href="./portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/adonyssantos"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/adonyssantos/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </main>
+    <footer class="content">
+      <p>Made with 💚 by <a href="#">Adonys</a></p>
+    </footer>
+  </body>
 </html>
