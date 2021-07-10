@@ -23,7 +23,7 @@ const createList = links => {
   return list;
 };
 
-// Print the data link list when tha page is loaded
+// Print the link data list when the page is loaded
 window.addEventListener('load', () => {
   print('links', createList(DATA));
 });
